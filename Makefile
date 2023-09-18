@@ -1,5 +1,7 @@
 all: test
 
 test:
-	tmp=$RANDOM
-	bash bin/test.sh $tmp $tmp
+	bash bin/input_test.sh
+
+clean:
+	rm -f tmp*
